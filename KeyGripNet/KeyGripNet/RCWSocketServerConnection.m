@@ -23,6 +23,9 @@
 #import "RCWDataStreamEmitter.h"
 #include <sys/socket.h>
 #include <netinet/in.h>
+#include <sys/xattr.h>
+#include <sys/utsname.h>
+#include <sys/time.h>
 
 @interface RCWSocketServerConnection ()
 @property (nonatomic, strong) RCWDataStreamEmitter *emitter;
